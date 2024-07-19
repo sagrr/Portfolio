@@ -66,8 +66,9 @@ section{
     align-items: center;
     margin: 82px 0;
 }
-.home-section div{
+.home-left{
     width: 30%;
+
 }
 .home-left img{
     border-radius: 5px;
@@ -79,9 +80,13 @@ section{
     width: 80%;
     margin-top: 40px;
 }
+.home-social-icons {
+width: 40%;
+}
 .home-right{
     margin-top: 35px;
     font-size: 2.5rem;
+    line-height: 3rem;
 }
 #element,
 .purple,
@@ -95,6 +100,10 @@ section{
     border-radius: 10px;
     cursor: pointer;
     font-size: 1rem;
+    transition: transform 0.5s;
+}
+.resume-btn:hover{
+    transform: translateY(-6px);
 }
 /* ===ABOUT SECTION ==== */
 #about-section{
