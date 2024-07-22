@@ -13,13 +13,16 @@
         <nav>
             <div class="right">SAGAR</div>
             <div class="left">
-                <ul>
+                <ul id="sidemenu">
                     <li ><a href=""class="home">Home</a></li>
                     <li><a href="#about-section">About</a></li>
                     <li><a href="#project-section">Projects</a></li>
                     <li><a href="#skills-section">Skills</a></li>
                     <li><a href="#contact-section">Contact Me</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-solid fa-bars"
+                onclick="openmenu()" openmenu()></i>
             </div>
         </nav>
     </header>
@@ -128,12 +131,13 @@
                         <a href="" class="resume-btn btn2">Download CV</a>
                     </div>
                     <div class="contact-right">
-                        <form>
+                        <form name="submit-to-google-sheet">
                             <input type="text" name="Name" placeholder="Your Name" required>
                             <input type="email" name="Email" placeholder="Your Email" required>
                             <textarea  class="message-size" name="Message" rows="6" placeholder="Your Message"></textarea>
                             <button type="submit" class="resume-btn btn2 submit">Submit</button>
                         </form>
+                        <span id="msg"></span>
                     </div>
                 </div>
             </div>
@@ -149,5 +153,6 @@
           typeSpeed: 50,
         });
       </script>
+      <script src="googlesheet.js"></script>
 </body>
 </html>
