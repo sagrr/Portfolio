@@ -1,4 +1,4 @@
-const sideMenu = document.querySelector("sidemenu");
+let sideMenu = document.querySelector("#sidemenu");
 
 function openmenu(){
   sideMenu.style.right = "0";
